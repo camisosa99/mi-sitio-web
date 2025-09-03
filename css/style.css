@@ -173,13 +173,20 @@ footer{
     gap: 20px; /* separación entre cards */
 } 
 
-.card-img-top {
-    width: 400px;
+.card {
+    width: 18rem;
+    min-height: 18.75rem
     filter: grayscale(4);
 }
-.card-img-top:hover{
+.card:hover{
     filter: grayscale(0)
 } 
+
+.card-img-top {
+    width: 400px;
+    
+}
+
 
 .cards .card {
     flex: 0 1 calc(33.333% - 20px); /* 3 por fila, ajustando el gap */
