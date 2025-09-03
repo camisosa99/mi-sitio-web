@@ -4,37 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adoptame si puedes</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&family=Nata+Sans:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="../imagenes/adoptame.png" alt="adoptame.png" class="logo">
+        <img src="../imagenes/adoptame.png" alt="Logo Adoptame si puedes" class="logo">
         <nav>
             <ul class="navbar">
-                <li><a href="inbox.html">Inicio</a></li>
-                <li><a href="adopciones.html">Adopicones</a></li>
-                <li><a href="comoayudar.html">Como ayudar</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./html/adopciones.html">Adopciones</a></li>
+                <li><a href="./html/comoayudar.html">Como ayudar</a></li>
+                <li><a href="./html/nosotros.html">Nosotros</a></li>
+                <li><a href="./html/contacto.html">Contacto</a></li>
 
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="inicio">
         <section class="sec1">
-            <div class="div1">
-                <img src="../imagenes/imagenprincipal.jpg" alt="" class="imagenes-inbox">
-            </div>
-            <div class="div2">
-                <p>Juntos, podemos cambiar la historia de un animal, un rescate a la vez</p>
-            <button class="buttons"><a href="adopciones.html">Conocé a nuestros peludos</a></button>
-            </div>
-            
-        </section>
-        <section class="sec2">
             <h1>¡BIENVENIDOS!</h1>
             <h2>Adoptame si puedes: Rescatando vidas, creando hogares</h2>
             <p>En <strong>Adoptame si puedes</strong>, creemos que cada animal merece una segunda oportunidad para encontrar la felicidad. Somos un refugio dedicado al rescate, cuidado y rehabilitación de animales en situación de abandono.
@@ -42,16 +32,26 @@
 Nuestro objetivo principal es darles la atención que necesitan, tanto médica como emocional, para que puedan sanar y prepararse para una nueva vida. Trabajamos incansablemente para encontrarles familias amorosas que les brinden el hogar que siempre soñaron.
 
 Al adoptar, no solo salvas una vida, sino que también nos ayudas a seguir nuestra misión de cambiar el destino de muchos otros animales. ¿Estás listo para abrir tu corazón y tu hogar?</p>
-            <button class="buttons"><a href="nosotros.html">Más sobre nosotros</a></button>
+            <a href="./html/nosotros.html" class="buttons">Más sobre nosotros</a>
         </section>
-        <section class="sec1">
+        <section class="sec2">
+            <div class="div1">
+                <img src="../imagenes/perros-refugio.jpg" alt="perros rescatados" class="imagenes-inbox">
+            </div>
+            <div class="div2">
+                <p>Juntos, podemos cambiar la historia de un animal, un rescate a la vez</p>
+            <a href="./html/adopciones.html" class="buttons">Conocé a nuestros peludos</a>
+            </div>
+            
+        </section>
+        
+        <section class="sec3">
             <div>
-                <img src="../imagenes/gatospricipal.jpg" alt="" class="imagenes-inbox">
+                <img src="../imagenes/gatos-refugio.jpg" alt="gatos en el refugio" class="imagenes-inbox">
             </div>
             <div>
             <p>Cada donación, por pequeña que sea, tiene un impacto inmenso en la vida de los animales que rescatamos. En Adoptame si puedes, dependemos de la generosidad de personas como tú para poder continuar con nuestra labor.</p>
-            <!-- <a href="comoayudar.html" class="boton">Donar</a> -->
-            <button class="buttons"><a href="comoayudar.html">Donar</a></button>
+            <a href="./html/comoayudar.html" class="buttons">Donar</a>
             </div>
             
 
@@ -59,18 +59,16 @@ Al adoptar, no solo salvas una vida, sino que también nos ayudas a seguir nuest
     </main>
     <footer>
         <div>
-            <img src="../imagenes/adoptame.png" alt="" class="logofooter">
+            <img src="../imagenes/adoptame.png" alt="Logo Adoptame si puedes" class="footer-logo">
         </div>
-        <div class="divfooter">
-            <p>+54 15 12345678 </p>
-            <p>contactos@adoptamesipuedes.org.ar</p>
-        </div>
-        <div class="divfooter">
-            <p>Seguinos en nuestras redes</p>
-            <a href="https://www.instagram.com/">Instagram</a>
-            <a href="https://www.facebook.com/">Facebook</a>
-        </div>
-        
+        <ul class="ul-footer">
+            <li>+54 15 12345678</li>
+            <li><a href="mailto: contactos@adoptamesipuedes.org.ar">contactos@adoptamesipuedes.org.ar</a></li>
+        </ul>
+        <ul class="ul-footer">
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+        </ul>
     </footer>
 </body>
 </html>

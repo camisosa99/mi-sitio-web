@@ -11,11 +11,11 @@
 </head>
 <body>
     <header>
-        <img src="../imagenes/adoptame.png" alt="adoptame.png" class="logo">
+        <img src="../imagenes/adoptame.png" alt="Logo Adoptame si puedes" class="logo">
         <nav>
             <ul class="navbar">
-                <li><a href="inbox.html">Inicio</a></li>
-                <li><a href="adopciones.html">Adopicones</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="adopciones.html">Adopciones</a></li>
                 <li><a href="comoayudar.html">Como ayudar</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -23,45 +23,59 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="como-ayudar">
         <h1>¿Cómo ayudar?</h1>
-        <section>
-            <p><strong>Adoptando:</strong>Adoptando: Dale uan segunda oportunidad a un perro o gato en busca de hogar. La adopción responsable salva vidas y llena tu casa de amor.</p>
-            <button class="buttons"><a href="adopciones.html">Adoptá</a></button>
-        </section>
-        <section>
-            <p><strong>Donando:</strong>Aceptamos donaciones de alimentos, medicamentos, mantas, correas o aportes economicos. Cada granito de arena suma</p>
-            <div>
-                <p>CBU:0000000000000</p>
-                <P>alias: ADOMPAME.SI.PUEDES</P>
-            </div>
-        </section>
-        <section>
-            <p><strong>Siendo hogar de tránsito:</strong>Albergar temporalmente a un animal hasta que encuentre una familia definitiva es una gran ayuda.</p>
-        </section>
-        <section>
-            <p><strong>Voluntariado:</strong>Podes sumarte al equipo de rescates, traslados, ferias o difución en redes sociales</p>
-        </section>
+        <p> Hay muchas formas de sumar tu granito de arena y cambiar la vida de nuestros peludos. 
+    ¡Elegí la que más resuene con vos!</p>
+        <div class="ayudar-grid">
+            <!-- Adoptar -->
+            <section class="card-ayuda">
+                <h2>Adoptando</h2>
+                <p>Dale una segunda oportunidad a un perro o gato en busca de hogar. 
+        La adopción responsable salva vidas y llena tu casa de amor.</p>
+                <a href="adopciones.html" class="buttons">Adoptá</a>
+            </section>
 
+            <!-- Donar -->
+            <section class="card-ayuda">
+                <h2>Donando</h2>
+                <p>Aceptamos alimentos, medicamentos, mantas, correas o aportes económicos. 
+                Cada granito de arena suma y hace la diferencia.</p>
+                <div class="donaciones-box">
+                <p><strong>CBU:</strong> 0000000000000</p>
+                <p><strong>Alias:</strong> ADOPTAME.SI.PUEDES</p>
+                </div>
+            </section>
+
+            <!-- Tránsito -->
+            <section class="card-ayuda">
+                <h2>Hogar de tránsito</h2>
+                <p>Albergar temporalmente a un animal hasta que encuentre una familia definitiva es una ayuda enorme para seguir rescatando.</p>
+            </section>
+
+            <!-- Voluntariado -->
+            <section class="card-ayuda">
+                <h2>Voluntariado</h2>
+                <p>Podés sumarte al equipo de rescates, traslados, ferias o difusión en redes sociales. 
+        ¡Tu tiempo y energía son muy valiosos!</p>
+            </section>
+        </div>
     </main>
 
     
 
-
     <footer>
         <div>
-            <img src="../imagenes/adoptame.png" alt="adoptame.png" class="logofooter">
+            <img src="../imagenes/adoptame.png" alt="Logo Adoptame si puedes" class="footer-logo">
         </div>
-        <div class="divfooter">
-            <p>+54 15 12345678 </p>
-            <p>contactos@adoptamesipuedes.org.ar</p>
-        </div>
-        <div class="divfooter">
-            <p>Seguinos en nuestras redes</p>
-            <a href="https://www.instagram.com/">Instagram</a>
-            <a href="https://www.facebook.com/">Facebook</a>
-        </div>
-        
+        <ul class="ul-footer">
+            <li>+54 15 12345678</li>
+            <li><a href="mailto: contactos@adoptamesipuedes.org.ar">contactos@adoptamesipuedes.org.ar</a></li>
+        </ul>
+        <ul class="ul-footer">
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+        </ul>
     </footer>
 </body>
 </html>

@@ -11,70 +11,62 @@
 </head>
 <body>
     <header>
-        <img src="../imagenes/adoptame.png" alt="adoptame.png" class="logo">
+        <img src="../imagenes/adoptame.png" alt="Logo Adoptame si puedes" class="logo">
         <nav>
             <ul class="navbar">
-                <li><a href="inbox.html">Inicio</a></li>
-                <li><a href="adopciones.html">Adopicones</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="adopciones.html">Adopciones</a></li>
                 <li><a href="comoayudar.html">Como ayudar</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-
             </ul>
         </nav>
     </header>
-
     <main class="contacto">
     <h1>Contacto</h1>
     <p>Para contactarse con nosotros complete el siguiente formulario y seleccione el área a donde quiere dirigirse. Muchas gracias.</p>
-    <div class="formulario-contenedor">
+    <form class="formulario-contenedor">
         
         <label for="nombre">Nombre y Apellido</label>
-        <input type="text" id="nombre" name="nombre">
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Camila Sosa">
 
         <label for="email">E-mail</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" placeholder="Ej: nombre@email.com">
 
         <label for="telefono">Teléfono</label>
         <input type="tel" id="telefono" name="telefono">
 
-        <label for="pais">Area de contacto</label>
-<select name="" id="">
-    <option value="">Adopciones</option>
-    <option value="">Donaciones</option>
-    <option value="">Voluntariado</option>
-</select>
+        <label for="area">Area de contacto</label>
+        <select name="area" id="area">
+            <option value="adopciones">Adopciones</option>
+            <option value="Donaciones">Donaciones</option>
+            <option value="voluntariado">Voluntariado</option>
+        </select>
 
         <label for="mensaje">Mensaje</label>
         <textarea id="mensaje" name="mensaje"></textarea>
 
-        <button type="buttons">ENVIAR</button>
-
-        <img src="" alt="">
-    </div>
+        <button class="buttons">ENVIAR</button>
+    </form>
 
     <div class="redes">
         <p>SEGUINOS EN</p>
-        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="../imagenes/logo-instagram.png" alt="Instagram" class="logos-redes"></a>
+        <a href="https://www.facebook.com/"><img src="../imagenes/logo-facebook.png" alt="Facebook" class="logos-redes"></a>
     </div>
-</main>
-
-
+    </main>
     <footer>
         <div>
-            <img src="../imagenes/adoptame.png" alt="adoptame.png" class="logofooter">
+            <img src="../imagenes/adoptame.png" alt="Logo Adoptame si puedes" class="footer-logo">
         </div>
-        <div class="divfooter">
-            <p>+54 15 12345678 </p>
-            <p>contactos@adoptamesipuedes.org.ar</p>
-        </div>
-        <div class="divfooter">
-            <p>Seguinos en nuestras redes</p>
-            <a href="https://www.instagram.com/">Instagram</a>
-            <a href="https://www.facebook.com/">Facebook</a>
-        </div>
-        
+        <ul class="ul-footer">
+            <li>+54 15 12345678</li>
+            <li><a href="mailto: contactos@adoptamesipuedes.org.ar">contactos@adoptamesipuedes.org.ar</a></li>
+        </ul>
+        <ul class="ul-footer">
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+        </ul>
     </footer>
 </body>
 </html>
