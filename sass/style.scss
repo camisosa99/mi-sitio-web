@@ -1,0 +1,234 @@
+@import "utilities/maps";
+
+@import "base/reset";
+@import "base/tipografias";
+
+@import "layout/footer";
+
+@import "components/navbar";
+@import "components/buttons";
+
+@import "layout/media/media768";
+
+
+
+
+
+//main de index:
+
+.inicio {
+    padding: 40px 20px;
+    background-color: #fff6e9;
+}
+
+.sec1{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+.sec1 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.sec2, 
+.sec3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.sec3{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 30px;
+} 
+
+.div-texto  {
+    flex: 1;
+    max-width: 50%;
+}
+
+.div-imagen  {
+    flex: 1;
+    max-width: 50%;
+}
+
+.div-imagen img  {
+    max-width: 100%;   /* Que no se deforme */
+    border-radius: 8px;
+    height: auto;
+}
+
+//main como ayudar=
+.como-ayudar {
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.como-ayudar h1 {
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+
+.como-ayudar {
+    margin-bottom: 1.25rem;
+    font-size: 1.375rem;
+}
+
+.ayudar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card-ayuda {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.card-ayuda h2 {
+    color: #F5AB50;
+    margin-bottom: 15px;
+}
+
+.donaciones-box {
+    background: #EED7B5;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+}
+
+
+//adopciones=
+.adopcionesintro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* separación entre cards */
+} 
+
+.card {
+    width: 18rem;
+    min-height: 18.75rem;
+    filter: grayscale(1);
+    img{
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+}
+}
+.card:hover{
+    filter: grayscale(0)
+} 
+
+
+
+
+.cards .card {
+    flex: 0 1 calc(33.333% - 20px); /* 3 por fila, ajustando el gap */
+    margin-bottom: 20px;
+    background: #EED7B5;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+
+
+// contacto=
+.contacto {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.formulario-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+.formulario-contenedor label {
+    font-weight: bold;
+}
+
+.formulario-contenedor input,
+.formulario-contenedor select,
+.formulario-contenedor textarea {
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+.formulario-contenedor textarea {
+    height: 100px;
+} 
+.logos-redes {
+    width: 120px;
+}
+
+//nosotrtoS=
+.main-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    padding: 2.5rem 1.25rem;
+}
+
+.texto-nosotros {
+    flex: 1 1 45%;
+    text-align: left;
+}
+
+.texto-nosotros h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.carrusel-nosotros {
+    flex: 1 1 45%;
+    width: 18.75rem;
+}
+
+
+//a general=
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+color: #F5AB50;
+}
+
+
+//media=
+
+
+

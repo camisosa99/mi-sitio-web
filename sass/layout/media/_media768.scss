@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+    .cards {
+        justify-content: center;
+    }
+
+    .cards .card {
+        flex: 0 1 calc(100% - 20px);
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+.inicio {
+    flex-direction: column;
+    text-align: center;
+}
+
+.div-texto .div-imagen{
+    max-width: 100%;
+}
+.div-texto {
+    margin-bottom: 15px;
+}
+}

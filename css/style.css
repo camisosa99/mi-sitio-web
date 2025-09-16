@@ -1,3 +1,322 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Epunda+Sans:ital,wght@0,300..900;1,300..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Libertinus+Keyboard&family=Mozilla+Text:wght@200..700&family=Nata+Sans:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syne:wght@400..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+}
+
+a {
+  list-style: none;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+footer {
+  background-color: #EED7B5;
+  display: flex;
+  justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+  align-items: center;
+  padding: 20px;
+}
+footer ul {
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  margin: 5px 0; /* espacio entre cada línea */
+}
+
+.footer-logo {
+  width: 130px;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  z-index: 1000; /*para que quede por delante*/
+  top: 0px;
+  background-color: #eed7b5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+  align-items: center; /*esto mueve todos los hijos en sentido vertical cuando tenga row*/
+}
+header nav {
+  justify-content: flex-end;
+  font-size: 20px;
+}
+header nav ul {
+  display: flex;
+  list-style: none; /*saca los puntos*/
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+header nav ul a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+}
+
+.logo {
+  width: 130px;
+}
+
+.buttons {
+  padding: 10px 20px;
+  background-color: #EED7B5;
+  border-radius: 62.5rem;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.buttons:hover {
+  background-color: #F5AB50;
+  color: white;
+}
+
+input:focus {
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    justify-content: center;
+  }
+  .cards .card {
+    flex: 0 1 calc(100% - 20px);
+  }
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .inicio {
+    flex-direction: column;
+    text-align: center;
+  }
+  .div-texto .div-imagen {
+    max-width: 100%;
+  }
+  .div-texto {
+    margin-bottom: 15px;
+  }
+}
+.inicio {
+  padding: 40px 20px;
+  background-color: #fff6e9;
+}
+
+.sec1 {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+}
+
+.sec1 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.sec2,
+.sec3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.sec3 {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 30px;
+}
+
+.div-texto {
+  flex: 1;
+  max-width: 50%;
+}
+
+.div-imagen {
+  flex: 1;
+  max-width: 50%;
+}
+
+.div-imagen img {
+  max-width: 100%; /* Que no se deforme */
+  border-radius: 8px;
+  height: auto;
+}
+
+.como-ayudar {
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.como-ayudar h1 {
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+}
+
+.como-ayudar {
+  margin-bottom: 1.25rem;
+  font-size: 1.375rem;
+}
+
+.ayudar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card-ayuda {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card-ayuda h2 {
+  color: #F5AB50;
+  margin-bottom: 15px;
+}
+
+.donaciones-box {
+  background: #EED7B5;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  font-family: monospace;
+}
+
+.adopcionesintro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* separación entre cards */
+}
+
+.card {
+  width: 18rem;
+  min-height: 18.75rem;
+  filter: grayscale(1);
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.25rem;
+}
+
+.card:hover {
+  filter: grayscale(0);
+}
+
+.cards .card {
+  flex: 0 1 calc(33.333% - 20px); /* 3 por fila, ajustando el gap */
+  margin-bottom: 20px;
+  background: #EED7B5;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.contacto {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.formulario-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.formulario-contenedor label {
+  font-weight: bold;
+}
+
+.formulario-contenedor input,
+.formulario-contenedor select,
+.formulario-contenedor textarea {
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.formulario-contenedor textarea {
+  height: 100px;
+}
+
+.logos-redes {
+  width: 120px;
+}
+
+.main-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 2.5rem 1.25rem;
+}
+
+.texto-nosotros {
+  flex: 1 1 45%;
+  text-align: left;
+}
+
+.texto-nosotros h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.carrusel-nosotros {
+  flex: 1 1 45%;
+  width: 18.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #F5AB50;
+}
 
 /*# sourceMappingURL=style.css.map */
