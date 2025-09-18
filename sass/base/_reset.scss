@@ -13,5 +13,10 @@ body{
 
 a{
     list-style: none;
+    text-decoration: none;
+    color: map-get($colors, texto1);
+    &:hover {
+        color: map-get($colors, terciario );
+    }
 }
 

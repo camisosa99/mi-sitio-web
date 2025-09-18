@@ -1,0 +1,29 @@
+.contacto {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: left;
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            padding: 10px;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            font-size: 16px;
+            width: 100%;
+        }
+    }
+}
+
+.formulario-contenedor textarea {
+    height: 100px;
+} 
+.logos-redes {
+    width: 120px;
+}

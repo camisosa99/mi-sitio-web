@@ -1,0 +1,35 @@
+.card-ayuda {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+    h2 {
+        color: #F5AB50;
+        margin-bottom: 15px;
+    }
+    div {
+        background: #EED7B5;
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: 8px;
+        font-family: monospace;
+    }
+}
+
+.card {
+    width: 18rem;
+    min-height: 18.75rem;
+    filter: grayscale(1);
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 1.25rem;
+    }
+    div {
+        padding: 15px;
+    }
+}
+.card:hover{
+    filter: grayscale(0)
+} 
