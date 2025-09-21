@@ -16,10 +16,10 @@ body {
 a {
   list-style: none;
   text-decoration: none;
-  color: black;
+  color: #333;
 }
 a:hover {
-  color: #F5AB50;
+  color: #f5ab50;
 }
 
 .space-mono-regular-italic {
@@ -29,7 +29,7 @@ a:hover {
 }
 
 footer {
-  background-color: #EED7B5;
+  background-color: #eed7b5;
   display: flex;
   justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
   align-items: center;
@@ -142,6 +142,11 @@ footer ul li {
   font-size: 16px;
   width: 100%;
 }
+.contacto form input:hover, .contacto form select:hover, .contacto form textarea:hover {
+  border: 2px solid black; /* el color y grosor que quieras */
+  outline: none; /* para evitar el borde azul del navegador */
+  transition: border 0.3s ease;
+}
 
 .formulario-contenedor textarea {
   height: 100px;
@@ -168,6 +173,27 @@ footer ul li {
   gap: 30px;
 }
 
+.donaciones-box {
+  background: #f5ab50;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  font-family: monospace;
+}
+
+.adopcionesintro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* separación entre cards */
+}
+
 header {
   width: 100%;
   position: sticky;
@@ -192,7 +218,7 @@ header nav ul {
 }
 header nav ul a {
   text-decoration: none;
-  color: black;
+  color: #fff6e9;
   margin: 20px;
 }
 
@@ -202,16 +228,19 @@ header nav ul a {
 
 .buttons {
   padding: 10px 20px;
-  background-color: #EED7B5;
+  background-color: #eed7b5;
   border-radius: 62.5rem;
   text-decoration: none;
-  color: black;
+  color: #333;
   font-size: 20px;
 }
-
 .buttons:hover {
-  background-color: #F5AB50;
-  color: white;
+  background-color: #f5ab50;
+  color: #fff;
+}
+.buttons:focus-visible {
+  outline: 2px solid black;
+  outline-offset: 4px;
 }
 
 input:focus {
@@ -219,22 +248,29 @@ input:focus {
 }
 
 .card-ayuda {
-  background: #fff;
+  background: #eed7b5;
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 .card-ayuda h2 {
-  color: #F5AB50;
+  color: #f5ab50;
   margin-bottom: 15px;
 }
 .card-ayuda div {
-  background: #EED7B5;
+  background: #eed7b5;
   padding: 15px;
   margin-top: 15px;
   border-radius: 8px;
   font-family: monospace;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* separación entre cards */
 }
 
 .card {
@@ -242,17 +278,26 @@ input:focus {
   min-height: 18.75rem;
   filter: grayscale(1);
 }
-.card img {
+.card:hover {
+  filter: grayscale(0);
+}
+
+.card-img-top {
   width: 100%;
   height: auto;
   border-radius: 1.25rem;
 }
-.card div {
-  padding: 15px;
+
+.cards .card {
+  flex: 0 1 calc(33.333% - 20px); /* 3 por fila, ajustando el gap */
+  margin-bottom: 20px;
+  background: #EED7B5;
+  border-radius: 1.25rem;
+  overflow: hidden;
 }
 
-.card:hover {
-  filter: grayscale(0);
+.card-body {
+  padding: 15px;
 }
 
 @media (max-width: 768px) {
@@ -275,6 +320,19 @@ input:focus {
   }
   .div-texto {
     margin-bottom: 15px;
+  }
+}
+footer {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 320px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 

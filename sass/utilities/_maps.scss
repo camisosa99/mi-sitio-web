@@ -1,10 +1,18 @@
-$colors:(
-    pincipal: #fff6e9,
+$colores:(
+    principal: #fff6e9,
     secundario: #eed7b5,
     terciario: #f5ab50,
-    text-hover: #f8f9fa,
-    text: #333
+    texto1: #333 ,
+    texto2: #fff
 );
+
+$tamanoletra: (
+    sm: 12px,
+    md: 16px,
+    lg: 24px,
+    xl: 2.5rem
+);
+
 
 // #fff6e9  background body
 // #eed7b5 navbar, donaciones box, footer, cards adoptados

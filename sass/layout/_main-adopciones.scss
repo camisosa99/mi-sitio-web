@@ -1,0 +1,13 @@
+.adopcionesintro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* separación entre cards */
+    } 
+

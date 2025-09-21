@@ -1,14 +1,18 @@
 .buttons{
     padding: 10px 20px;
-    background-color: #EED7B5;
+    background-color: map-get($colores, secundario);
     border-radius: 62.5rem;
     text-decoration: none;
-    color: black;
+    color: map-get($colores, texto1);
     font-size: 20px;
-}
-.buttons:hover {
-    background-color: #F5AB50;
-    color: white;
+    &:hover {
+        background-color: map-get($colores, terciario);
+        color: map-get($colores, texto2);
+    }
+    &:focus-visible {
+        outline: 2px solid black; // o algún color de tu paleta
+        outline-offset: 4px;
+    }
 }
 
 input:focus{

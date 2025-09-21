@@ -1,15 +1,16 @@
+//COMO AYUDAR
 .card-ayuda {
-    background: #fff;
+    background: map-get($colores, secundario);
     border-radius: 12px;
     padding: 25px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: left;
     h2 {
-        color: #F5AB50;
+        color: map-get($colores, terciario) ;
         margin-bottom: 15px;
     }
     div {
-        background: #EED7B5;
+        background: map-get($colores, secundario);
         padding: 15px;
         margin-top: 15px;
         border-radius: 8px;
@@ -17,19 +18,40 @@
     }
 }
 
+
+//ADOPCIONES
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* separación entre cards */
+} 
+
 .card {
     width: 18rem;
     min-height: 18.75rem;
     filter: grayscale(1);
-    img{
-        width: 100%;
-        height: auto;
-        border-radius: 1.25rem;
-    }
-    div {
-        padding: 15px;
-    }
+    &:hover{
+        filter: grayscale(0)
+    } 
 }
-.card:hover{
-    filter: grayscale(0)
-} 
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+    
+}
+
+
+.cards .card {
+    flex: 0 1 calc(33.333% - 20px); /* 3 por fila, ajustando el gap */
+    margin-bottom: 20px;
+    background: #EED7B5;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 15px;
+}

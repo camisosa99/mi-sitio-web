@@ -8,15 +8,16 @@ body{
     font-family: "Karla", sans-serif;
     font-size: 20px;
     font-style: normal;
-    background-color: map-get($colors, principal);
+    background-color: map-get($colores, principal);
 }
 
 a{
     list-style: none;
     text-decoration: none;
-    color: map-get($colors, texto1);
+    color: map-get($colores, texto1);
     &:hover {
-        color: map-get($colors, terciario );
+        color: map-get($colores, terciario);
     }
+    
 }
 

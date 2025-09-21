@@ -1,14 +1,15 @@
+
+
 header{
     width: 100%;
     position: sticky;
     z-index: 1000; /*para que quede por delante*/
     top: 0px;
-    background-color: #eed7b5;
+    background-color: map-get($colores, secundario);
     display: flex;
     flex-direction: row;
     justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
     align-items: center; /*esto mueve todos los hijos en sentido vertical cuando tenga row*/;
-
     nav{
         justify-content: flex-end;
         font-size: 20px;
@@ -20,7 +21,7 @@ header{
             padding: 0;
             a{
                 text-decoration: none;
-                color: black;
+                color: map-get($colores, principal);
                 margin: 20px;
             }
         }

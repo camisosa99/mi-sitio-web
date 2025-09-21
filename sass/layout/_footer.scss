@@ -1,5 +1,8 @@
+@use "../utilities/maps";
+
+
 footer{
-    background-color: #EED7B5;
+    background-color: map-get(maps.$colores, secundario);
     display: flex;
     justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
     align-items: center;
