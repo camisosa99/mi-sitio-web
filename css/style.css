@@ -188,12 +188,27 @@ footer ul li {
   text-align: center;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* separación entre cards */
+.card-image-top {
+  animation-name: agrandar;
+  animation-duration: 5000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
 }
 
+@keyframes agrandar {
+  0% {
+    border-radius: 50%;
+    background-color: red;
+  }
+  10% {
+    transform: rotate(40deg);
+    background-color: green;
+  }
+  35% {
+    transform: scale(0.5);
+  }
+}
 header {
   width: 100%;
   position: sticky;
@@ -276,6 +291,7 @@ input:focus {
 .card {
   width: 18rem;
   min-height: 18.75rem;
+  overflow: hidden;
   filter: grayscale(1);
 }
 .card:hover {
@@ -285,7 +301,13 @@ input:focus {
 .card-img-top {
   width: 100%;
   height: auto;
+  object-fit: contain;
   border-radius: 1.25rem;
+  transition: transform 0.3s;
+}
+.card-img-top:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s cubic-bezier(0.17, 0.67, 0.88, 0.39);
 }
 
 .cards .card {
@@ -293,11 +315,11 @@ input:focus {
   margin-bottom: 20px;
   background: #EED7B5;
   border-radius: 1.25rem;
-  overflow: hidden;
 }
 
 .card-body {
   padding: 15px;
+  margin-top: 35px;
 }
 
 @media (max-width: 768px) {

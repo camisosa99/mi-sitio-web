@@ -1,0 +1,21 @@
+.card-image-top {
+     animation-name: agrandar; //aca le damos el nombre
+    animation-duration: 5000ms; //esto le da la duracion (en js se usan mas los ms que los s)
+    animation-timing-function: linear; //surva de bezier
+    animation-iteration-count: infinite; //cuantas veces queremos que se repita
+    animation-delay: 1s; //una vez que se carga la pagina cuanto tarda en comenzar la acccion
+}
+
+@keyframes agrandar {
+    0%{
+        border-radius: 50%;
+        background-color: red;
+    }
+    10% {
+        transform: rotate(40deg);
+        background-color: green;
+    }
+    35% {
+        transform: scale(0.5);
+    }
+}
