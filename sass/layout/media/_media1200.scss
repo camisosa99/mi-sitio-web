@@ -1,6 +1,23 @@
 @media (min-width: 1200px) {
-    .sec2, .sec3 {
+
+    header {
         padding: 0 60px; // Más padding en pantallas grandes
-        gap: 50px; // Más espacio entre elementos
+        
+        nav ul {
+           @include flex($gap: 30px); // Más espacio entre items
+            a {
+                @include link-style(map-get($colores, principal), 25px);
+                font-size: 22px;
+            }
+        }
     }
+    
+    .logo {
+        width: 150px; // Logo más grande
+    }
+    .sec2, .sec3 {
+        padding: 0 60px;
+        gap: 50px; 
+    }
+    
 }

@@ -1,6 +1,33 @@
 
 @media(max-width: 320px) {
 
+    header {
+        @include flex(column, center, center, nowrap, 8px); // Mixin con gap más pequeño
+        padding: 8px;
+        
+        nav {
+            ul {
+                @include flex(column, center, center, nowrap, 10px);
+                text-align: center;
+                
+                a {
+                    @include link-style(map-get($colores, principal), 8px 0);
+                    font-size: 16px;
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                    
+                    &:hover {
+                        background-color: rgba(map-get($colores, principal), 0.1);
+                    }
+                }
+            }
+        }
+    }
+    
+    .logo {
+        width: 90px;
+    }
+
     .inicio {
         padding: 20px 10px;
     }
