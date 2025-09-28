@@ -12,3 +12,7 @@
     color: $color;
     margin: $margin;
 }
+
+@mixin transicion($propiedad: all, $duracion: 0.3s, $tipo: ease) {
+    transition: $propiedad $duracion $tipo;
+}

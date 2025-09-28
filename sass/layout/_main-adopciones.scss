@@ -1,8 +1,10 @@
-.adopcionesintro{
+.adopcionesintro {
+    @include flex($direction: column, $items: center);
     width: 100%;
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    padding-top: 50px;
-} 
-
+    padding-top: 40px;
+}
+h2 {
+    @extend .adopcionesintro;
+    padding-top: 0; // Sobrescribe solo el padding
+}

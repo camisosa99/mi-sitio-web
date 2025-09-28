@@ -5,12 +5,20 @@
     text-decoration: none;
     color: map-get($colores, texto1);
     font-size: 20px;
+    @include transicion(all, 0.3s, ease);
+
     &:hover {
         background-color: map-get($colores, terciario);
         color: map-get($colores, texto2);
+        transform: translateY(-2px); // Efecto de elevación
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra suave
+    }
+    &:active {
+        transform: translateY(0); // Vuelve a la posición original
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     &:focus-visible {
-        outline: 2px solid black; // o algún color de tu paleta
+        outline: 2px solid map-get($colores, principal);
         outline-offset: 4px;
     }
 }
