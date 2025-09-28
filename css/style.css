@@ -53,12 +53,12 @@ footer ul li {
   padding: 40px 20px;
   background-color: #fff6e9;
 }
-.inicio section {
+.inicio .sec1 {
   text-align: center;
   max-width: 800px;
   margin: 0 auto 60px auto;
 }
-.inicio section h1 {
+.inicio .sec1 h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
@@ -67,36 +67,33 @@ footer ul li {
 .sec3 {
   display: flex;
   align-items: center;
-  max-width: 800px;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
   margin-bottom: 60px;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 2.5rem;
+  text-align: left;
 }
-.sec2 div,
-.sec3 div {
+.sec2 .div-imagen,
+.sec3 .div-imagen {
   flex: 1;
-  max-width: 50%;
+  max-width: 45%;
 }
-.sec2 div img,
-.sec3 div img {
+.sec2 .div-imagen img,
+.sec3 .div-imagen img {
   max-width: 100%; /* Que no se deforme */
   border-radius: 8px;
   height: auto;
 }
-.sec2 div,
-.sec3 div {
+.sec2 .div-texto,
+.sec3 .div-texto {
   flex: 1;
-  max-width: 50%;
+  max-width: 45%;
+  text-align: center;
 }
 
 .sec3 {
-  display: flex;
   flex-direction: row-reverse;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 60px;
-  gap: 30px;
 }
 
 .main-nosotros {
@@ -188,27 +185,6 @@ footer ul li {
   text-align: center;
 }
 
-.card-image-top {
-  animation-name: agrandar;
-  animation-duration: 5000ms;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-delay: 1s;
-}
-
-@keyframes agrandar {
-  0% {
-    border-radius: 50%;
-    background-color: red;
-  }
-  10% {
-    transform: rotate(40deg);
-    background-color: green;
-  }
-  35% {
-    transform: scale(0.5);
-  }
-}
 header {
   width: 100%;
   position: sticky;
