@@ -203,24 +203,35 @@ footer ul li {
 }
 
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
   width: 100%;
   position: sticky;
   z-index: 1000; /*para que quede por delante*/
   top: 0px;
   background-color: #eed7b5;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
-  align-items: center; /*esto mueve todos los hijos en sentido vertical cuando tenga row*/
 }
 header nav {
+  display: flex;
+  flex-direction: row;
   justify-content: flex-end;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 0;
   font-size: 20px;
 }
 header nav ul {
   display: flex;
-  list-style: none; /*saca los puntos*/
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
   gap: 20px;
+  list-style: none; /*saca los puntos*/
   margin: 0;
   padding: 0;
 }

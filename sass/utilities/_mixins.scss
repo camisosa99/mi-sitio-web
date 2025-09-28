@@ -1,8 +1,14 @@
-@mixin flex ($justify, $items, $gap, $direction, $wrap) {
+@mixin flex($direction: row, $justify: flex-start, $items: stretch, $wrap: nowrap, $gap: 0) {
     display: flex;
-    flex-wrap: $wrap;
     flex-direction: $direction;
-    justify-content: $justify; //variable integrada
+    justify-content: $justify;
     align-items: $items;
+    flex-wrap: $wrap;
     gap: $gap;
+}
+
+@mixin link-style($color, $margin: 0) {
+    text-decoration: none;
+    color: $color;
+    margin: $margin;
 }

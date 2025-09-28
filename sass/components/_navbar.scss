@@ -1,28 +1,24 @@
 
 
 header{
+    @include flex(row, space-between, center);
     width: 100%;
     position: sticky;
     z-index: 1000; /*para que quede por delante*/
     top: 0px;
     background-color: map-get($colores, secundario);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
-    align-items: center; /*esto mueve todos los hijos en sentido vertical cuando tenga row*/;
+    //justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+    //align-items: center; /*esto mueve todos los hijos en sentido vertical cuando tenga row*/;
     nav{
-        justify-content: flex-end;
+        @include flex($justify: flex-end); // Solo cambio justify-content
         font-size: 20px;
         ul{
-            display: flex;
+            @include flex($gap: 20px);
             list-style: none; /*saca los puntos*/
-            gap: 20px;
             margin: 0;
             padding: 0;
             a{
-                text-decoration: none;
-                color: map-get($colores, principal);
-                margin: 20px;
+                @include link-style(map-get($colores, principal), 20px);
             }
         }
     }
