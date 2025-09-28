@@ -1,11 +1,11 @@
 .main-nosotros {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 2.5rem;
     padding: 2.5rem 1.25rem;
-    section {
+    .texto-nosotros {
         flex: 1 1 45%;
         text-align: left;
         h1 {
@@ -13,8 +13,24 @@
             margin-bottom: 20px;
         }
     }
-    div{
-        flex: 1 1 45%;
-        width: 18.75rem;
+}
+
+#carouselExample {
+    flex: 1 1 45%;
+    max-width: 500px;
+    min-height: 350px;
+    position: relative;//para posicionar las flechas
+    .carousel-inner {
+        border-radius: 8px;
+        overflow: hidden;
+        height: 350px;
+        .carousel-item {
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; //CLAVE!! mantiene proporciones sin deformarrr
+            }
+        }
     }
 }

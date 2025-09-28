@@ -29,6 +29,25 @@
         flex: 0 1 calc(100% - 20px);
     }
 
+    .main-nosotros {
+        flex-direction: column;
+        text-align: center;
+        
+        .texto-nosotros,
+        #carouselExample {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+        
+        #carouselExample {
+            min-height: 250px; 
+            
+            .carousel-inner {
+                height: 250px;
+            }
+        }
+    }
+
 
 
 
