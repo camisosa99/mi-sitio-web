@@ -4,7 +4,7 @@
 @import "base/tipografias"; //ok
 
 @import "layout/footer"; //ok
-@import "layout/main-index";
+@import "layout/main-index"; //ok
 @import "layout/main-nosotros";
 @import"layout/main-contacto"; //ok
 @import  "layout/main-ayuda";
@@ -16,5 +16,6 @@
 @import "components/cards";
 
 
+@import "layout/media/media1200";
 @import "layout/media/media768";
 @import "layout/media/media320";
