@@ -45,7 +45,7 @@ git clone (https://github.com/camisosa99/mi-sitio-web.git)
 
 2.Abre el archivo index.html en tu navegador
 
-O visita el sitio en vivo: 
+O visita el sitio en vivo: https://adoptame-si-puedes.netlify.app/
 
 ✨ Características
 Diseño 100% responsive (móvil, tablet, desktop)
