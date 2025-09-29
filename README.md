@@ -41,7 +41,7 @@ adoptame-si-puedes/
 
 1. Clona este repositorio:
 
-git clone [URL-de-tu-repo]
+git clone (https://github.com/camisosa99/mi-sitio-web.git)
 
 2.Abre el archivo index.html en tu navegador
 
