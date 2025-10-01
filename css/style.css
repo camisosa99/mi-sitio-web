@@ -156,6 +156,7 @@ footer ul li {
   width: 100%;
 }
 .contacto form input:hover, .contacto form select:hover, .contacto form textarea:hover {
+  border: 2px solid black; /* el color y grosor que quieras */
   outline: none; /* para evitar el borde azul del navegador */
   transition: border 0.3s ease;
 }
@@ -260,6 +261,8 @@ header nav ul a {
   text-decoration: none;
   color: #333;
   font-size: 20px;
+  border: none;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 .buttons:hover {

@@ -5,6 +5,8 @@
     text-decoration: none;
     color: map-get($colores, texto1);
     font-size: 20px;
+    border: none;
+    cursor: pointer;
     @include transicion(all, 0.3s, ease);
 
     &:hover {
